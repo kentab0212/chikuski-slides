@@ -523,7 +523,8 @@
           <h4>企画投稿記事広告</h4>
           <p>特集テーマ連動の有料掲載枠。デザイン料込み1ページ12万円を目指す。習い事・住宅系など複数事業者に同一テーマで声かけ。</p>
         </div>
-        <div class="menu-card">
+        <div class="menu-card" style="background:#FFF8F0;border:2px solid #E07B39;position:relative;">
+          <div style="position:absolute;top:-10px;right:10px;background:#E07B39;color:white;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:10px;">要検討</div>
           <div class="menu-num">MENU 04 ★NEW</div>
           <h4>スポンサーシップ制度</h4>
           <p>一度でも掲載した方は全員が自動加盟。顧客との継続コミュニケーションの仕組みとして機能させる。パレット特典付き。</p>
@@ -840,17 +841,64 @@
       </div>
     </div>
   </div>
+
+  <!-- 21 Supplement: Sponsorship -->
+  <div class="slide" id="s21">
+    <div class="slide-header">
+      <span class="brand">チクスキ再建案</span><span>補足資料</span>
+    </div>
+    <div class="slide-body" style="padding-top:16px;padding-bottom:16px;">
+      <div class="section-label">Supplement</div>
+      <div class="slide-title" style="margin-bottom:12px;">スポンサーシップ制度 ── 要検討事項</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+
+        <div style="border:2px solid #1D3557;border-radius:6px;padding:12px;">
+          <div style="font-weight:700;color:#1D3557;font-size:11px;letter-spacing:1px;margin-bottom:8px;">① 狙いと仕組み</div>
+          <p style="font-size:12px;color:#555;margin-bottom:8px;">属人的な営業から組織的なリスト管理・アプローチへ</p>
+          <div style="font-size:12px;line-height:1.7;">
+            <div style="margin-bottom:6px;"><strong>(a) ニュースレター活用</strong><br>「こういう事例がありました」など定期情報提供から始める。無料の接点維持装置として機能させる。</div>
+            <div><strong>(b) 自治体・観光協会との接続維持</strong><br>担当者交代による断絶を防ぐため、メールアドレス登録によるリスト化で組織的つながりを構築。</div>
+          </div>
+        </div>
+
+        <div style="border:2px solid #1D3557;border-radius:6px;padding:12px;">
+          <div style="font-weight:700;color:#1D3557;font-size:11px;letter-spacing:1px;margin-bottom:8px;">② 価値と独自性</div>
+          <p style="font-size:12px;color:#555;margin-bottom:8px;">既存メディアとの違いは「目的」にある</p>
+          <div style="font-size:12px;line-height:1.7;">
+            <div style="margin-bottom:5px;">(a) <strong>ミュータントインパクトの創出</strong></div>
+            <div style="margin-bottom:5px;">(b) <strong>文化的価値・人生への影響</strong>──経済合理性では測れない価値</div>
+            <div>(c) <strong>常識を覆し地方から希望を作る姿勢</strong>──「コテンラジオ」が体現する精神性に近い。賛同者との蓄積を大切にする。</div>
+          </div>
+        </div>
+
+        <div style="border:2px solid #E07B39;border-radius:6px;padding:12px;">
+          <div style="font-weight:700;color:#E07B39;font-size:11px;letter-spacing:1px;margin-bottom:8px;">③ 具体的な特典案</div>
+          <p style="font-size:12px;color:#555;margin-bottom:8px;">「チクスキスポンサーズ」継続枠との整理も含む</p>
+          <div style="font-size:12px;line-height:1.7;">
+            <div style="margin-bottom:5px;">(a) 年間掲載実績に応じた<strong>パレット内チラシ設置</strong></div>
+            <div style="margin-bottom:5px;">(b) <strong>イベント割引</strong>の適用</div>
+            <div style="margin-bottom:5px;">(c) <strong>おいとま食堂</strong>の割引チケット提供</div>
+            <div>(d) <strong>株主的な参画感</strong>の提供──応援している実感を持ってもらう</div>
+          </div>
+        </div>
+
+      </div>
+      <div style="margin-top:10px;background:#FFF8F0;border-left:3px solid #E07B39;padding:8px 12px;font-size:12px;color:#555;border-radius:0 4px 4px 0;">
+        広報受注の状況によっては新規案件を受けられない時期も生じうるが、スポンサーシップ制度を通じた中長期的な受注・関係性強化につなげていく。<strong style="color:#E07B39;">要検討事項として継続整理。</strong>
+      </div>
+    </div>
+  </div>
   <!-- Navigation -->
   <div class="nav">
     <button class="nav-btn" id="prev-btn" onclick="go(-1)" disabled>← 前へ</button>
-    <span class="slide-counter" id="counter">1 / 20</span>
+    <span class="slide-counter" id="counter">1 / 21</span>
     <button class="nav-btn" id="next-btn" onclick="go(1)">次へ →</button>
   </div>
 </div>
 
 <script>
   let cur = 1;
-  const total = 20;
+  const total = 21;
 
   function go(dir) {
     document.getElementById('s' + cur).classList.remove('active');
