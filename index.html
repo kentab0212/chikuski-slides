@@ -587,8 +587,81 @@
     </div>
   </div>
 
-  <!-- 15 Premise -->
+
+  <!-- 15 NEW: フロントエンド商品 -->
   <div class="slide" id="s15">
+    <div class="slide-header">
+      <span class="brand">チクスキ再建案</span><span>フロントエンド商品として設計する</span>
+    </div>
+    <div class="slide-body">
+      <div class="section-label">Design</div>
+      <div class="slide-title">ウォール・投稿記事広告を「入口商品」として位置づける</div>
+
+      <div class="highlight-box" style="margin-bottom:16px;font-size:14px;">
+        単体で大きな利益を狙うより、<strong>取引の入口を増やすことが先決</strong>。
+        低単価で掲載しやすい入口を作り、継続掲載 → 企画広告 → 制作案件へとつなぐ。
+      </div>
+
+      <p style="font-size:15px;font-weight:700;color:#1D3557;margin-bottom:10px;">連続掲載プラン</p>
+      <table style="font-size:13px;width:100%;">
+        <thead><tr><th>プラン</th><th>内容</th><th>狙い</th></tr></thead>
+        <tbody>
+          <tr><td>単発掲載</td><td>1回のみ</td><td>初回利用の入口</td></tr>
+          <tr><td>3ヶ月連続掲載</td><td>初回から3ヶ月連続</td><td>効果検証＋継続化</td></tr>
+          <tr><td>年6回掲載</td><td>隔月ペース</td><td>定期販促需要を拾う</td></tr>
+          <tr><td>年12回掲載</td><td>毎月掲載</td><td>安定収益化</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px;margin-top:10px;color:#555;">
+        ※割引は最小限。目的は安売りではなく、<strong>先々の掲載予定を積み上げること</strong>。
+        毎月ゼロから獲得するより、売上見込みが先に見えている状態を作る。
+      </p>
+    </div>
+  </div>
+
+  <!-- 16 NEW: インサイドセールス -->
+  <div class="slide" id="s16">
+    <div class="slide-header">
+      <span class="brand">チクスキ再建案</span><span>インサイドセールス体制</span>
+    </div>
+    <div class="slide-body" style="padding-top:28px;padding-bottom:28px;">
+      <div class="section-label">Inside Sales</div>
+      <div class="slide-title" style="margin-bottom:14px;">事務スタッフが回す → 兆しを拾って担当者へ渡す</div>
+      <div class="two-col" style="gap:16px;">
+        <div class="col-box">
+          <h4>MAフロー（自動化で接点を作る）</h4>
+          <ol style="font-size:13px;padding-left:18px;line-height:1.9;">
+            <li>過去掲載者にメール・LINEで一斉案内</li>
+            <li>開封・クリック・返信があった事業者をリスト化</li>
+            <li>反応があった相手にだけ電話する</li>
+            <li>申し込み後はLINEで素材・校正を回収</li>
+            <li>掲載後にサンキューメール送信</li>
+            <li>翌月・翌々月の空き枠を自動案内</li>
+          </ol>
+        </div>
+        <div class="col-box">
+          <h4>アップセルのバトンパス</h4>
+          <table style="font-size:12px;width:100%;">
+            <thead><tr><th>顧客の反応</th><th>次の提案</th></tr></thead>
+            <tbody>
+              <tr><td>SNSを強化したい</td><td>SNS運用・広告支援</td></tr>
+              <tr><td>チラシを作りたい</td><td>デザイン制作</td></tr>
+              <tr><td>採用に困っている</td><td>求人広告・採用ページ</td></tr>
+              <tr><td>3ヶ月以上継続中</td><td>企画広告・スポンサー</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:12px;margin-top:8px;color:#555;">
+            バックオフィスは<strong>売り込まない</strong>。<br>
+            兆しを記録し、編集・営業・制作担当へ引き渡す。<br>
+            月1回、フラグを共有する引き渡しMTGを設ける。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 17 Premise -->
+  <div class="slide" id="s17">
     <div class="slide-header">
       <span class="brand">チクスキ再建案</span><span>前提条件</span>
     </div>
@@ -616,7 +689,7 @@
   </div>
 
   <!-- 16 Summary -->
-  <div class="slide" id="s16">
+  <div class="slide" id="s18">
     <div class="slide-header">
       <span class="brand">チクスキ再建案</span><span>まとめ</span>
     </div>
@@ -639,8 +712,8 @@
     </div>
   </div>
 
-  <!-- 17 NEW：具体的なアクションプラン -->
-  <div class="slide" id="s17">
+  <!-- 19 NEW：具体的なアクションプラン -->
+  <div class="slide" id="s19">
     <div class="slide-header">
       <span class="brand">チクスキ再建案</span><span>具体的なアクションプラン</span>
     </div>
@@ -690,14 +763,14 @@
   <!-- Navigation -->
   <div class="nav">
     <button class="nav-btn" id="prev-btn" onclick="go(-1)" disabled>← 前へ</button>
-    <span class="slide-counter" id="counter">1 / 17</span>
+    <span class="slide-counter" id="counter">1 / 19</span>
     <button class="nav-btn" id="next-btn" onclick="go(1)">次へ →</button>
   </div>
 </div>
 
 <script>
   let cur = 1;
-  const total = 17;
+  const total = 19;
 
   function go(dir) {
     document.getElementById('s' + cur).classList.remove('active');
